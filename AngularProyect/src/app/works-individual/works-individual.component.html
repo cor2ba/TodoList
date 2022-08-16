@@ -1,0 +1,12 @@
+<div class="Container" *ngIf="!showDates">
+  <h1 class="Subtitle">{{ worksInfo.texto }}</h1>
+  <h3 class="Functions" (click)="activateEdition()">Editar</h3>
+  <h3 class="Functions" (click)="deleteRegister(worksInfo)">Eliminar</h3>
+</div>
+<div class="Container2" *ngIf="showDates">
+  <input placeholder="Nuevo mensaje..." class="Input" type="text" #newName />
+  <button class="Button" (click)="editWorks(worksInfo, newName)">
+    GUARDAR
+  </button>
+  <button class="Button" (click)="back()">VOLVER</button>
+</div>

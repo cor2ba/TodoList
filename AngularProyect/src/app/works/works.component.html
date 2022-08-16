@@ -1,0 +1,16 @@
+<div class="Container">
+  <div class="Create">
+    <input placeholder="Mensaje..." class="Input" type="text" #newText />
+    <button class="Button" (click)="createRegister(newText)">GUARDAR</button>
+  </div>
+  <div class="Items">
+    <ul class="Listas">
+      <li class="List" *ngFor="let item of works">
+        <app-works-individual
+          [worksInfo]="item"
+          (changeInfo)="refresh()"
+        ></app-works-individual>
+      </li>
+    </ul>
+  </div>
+</div>

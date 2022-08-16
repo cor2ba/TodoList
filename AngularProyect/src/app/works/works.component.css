@@ -1,0 +1,53 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Listas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.List {
+  list-style: none;
+}
+
+.Input {
+  border: 2px solid #f4a261;
+  color: #f4a261;
+  font-size: 20px;
+  background: #2a9d8f;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.Button {
+  border: 2px solid #f4a261;
+  color: #f4a261;
+  font-size: 20px;
+  background: #2a9d8f;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+::placeholder {
+  color: #f4a261;
+}
