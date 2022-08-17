@@ -5,7 +5,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js",
+    "heroku-postbuild": "nodemon index.js"
   },
   "dependencies": {
     "body-parser": "1.8",
