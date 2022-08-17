@@ -8,6 +8,9 @@
     "start": "nodemon index.js",
     "heroku-postbuild": "nodemon index.js"
   },
+  "engines": {
+    "node": "12.11.1"
+  },
   "dependencies": {
     "body-parser": "1.8",
     "cors": "^2.8.5",
