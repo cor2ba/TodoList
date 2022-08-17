@@ -5,11 +5,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon index.js",
-    "heroku-postbuild": "nodemon index.js"
-  },
-  "engines": {
-    "node": "12.11.1"
+    "start": "nodemon servidor.js"
   },
   "dependencies": {
     "body-parser": "1.8",

@@ -1,0 +1,69 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px 30px 0px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 75vw;
+  max-width: 75vw;
+  border: 2px solid #264653b1;
+}
+
+.Container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0px 30px 0px;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 75vw;
+  max-width: 75vw;
+  border: 2px solid #264653b1;
+  gap: 10px;
+}
+
+.Subtitle {
+  font-size: 35px;
+  color: #e9c46a;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.Functions {
+  color: #f4a261;
+  font-size: 25px;
+  background-color: #e76f51;
+  border-radius: 50px;
+  width: auto;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid #f4a261;
+}
+
+.Input {
+  border: 2px solid #f4a261;
+  color: #f4a261;
+  font-size: 20px;
+  background: #2a9d8f;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.Button {
+  border: 2px solid #f4a261;
+  color: #f4a261;
+  font-size: 20px;
+  background: #2a9d8f;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+::placeholder {
+  color: #f4a261;
+}
