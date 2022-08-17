@@ -3,8 +3,9 @@ var cors = require("cors");
 var bodyParser = require("body-parser");
 var app = express();
 var mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect("mongodb://localhost:27017/New");
+mongoose.connect(process.env.MONGODB_URL);
 
 var New = mongoose.model("New", { texto: String, finish: Boolean });
 
