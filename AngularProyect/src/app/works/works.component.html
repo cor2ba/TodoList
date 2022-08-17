@@ -1,9 +1,9 @@
-<div class="Container">
+<div *ngIf="!error" class="Container">
   <div class="Create">
     <input placeholder="Mensaje..." class="Input" type="text" #newText />
     <button class="Button" (click)="createRegister(newText)">GUARDAR</button>
   </div>
-  <div class="Items">
+  <div class="Items" *ngIf="works && works.length > 0">
     <ul class="Listas">
       <li class="List" *ngFor="let item of works">
         <app-works-individual
@@ -13,4 +13,10 @@
       </li>
     </ul>
   </div>
+  <div class="Items2" *ngIf="!works || works.length <= 0">
+    <h1>Sin mensajes</h1>
+  </div>
+</div>
+<div *ngIf="error" class="Items2">
+  <h1>Aplicación no disponible</h1>
 </div>

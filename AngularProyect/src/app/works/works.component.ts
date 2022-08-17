@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WorksComponent implements OnInit {
   works: any;
+  error: any;
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
@@ -20,6 +21,9 @@ export class WorksComponent implements OnInit {
 
   createRegister(newText: any): void {
     var input = { texto: newText.value };
+    if (!newText.value.length) {
+      return alert('Debes poner un mensaje para recordar');
+    }
 
     this.http.post('http://localhost:8080/api/new', input).subscribe((res) => {
       this.peticionExterna();
@@ -27,8 +31,9 @@ export class WorksComponent implements OnInit {
   }
 
   peticionExterna(): void {
-    this.http.get('http://localhost:8080/api/new').subscribe((res) => {
-      this.works = res;
-    });
+    this.http.get('http://localhost:8080/api/new').subscribe(
+      (res) => (this.works = res),
+      (error) => (this.error = error)
+    );
   }
 }
