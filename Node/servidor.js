@@ -9,7 +9,7 @@ mongoose.connect(process.env.MONGODB_URL);
 
 var New = mongoose.model("New", { texto: String, finish: Boolean });
 
-// app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public"));
 
 app.use(bodyParser.json());
 
