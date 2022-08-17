@@ -4,6 +4,9 @@
   "description": "first angular & mongoDB project",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "nodemon servidor.js"
+  },
   "dependencies": {
     "body-parser": "1.8",
     "cors": "^2.8.5",
